@@ -1,7 +1,7 @@
 
-# %%
 # https://www.python-mip.com/
 
+# %%
 from mip import Model, xsum, maximize, BINARY
 
 p = [10, 13, 18, 31, 7, 15]
