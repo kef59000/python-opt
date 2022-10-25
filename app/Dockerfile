@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/kef59000/python-opt.git .
+# RUN git clone https://github.com/kef59000/python-opt.git .
+COPY . .
 
 RUN pip install -r requirements.txt
 
