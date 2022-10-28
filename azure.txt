@@ -1,4 +1,4 @@
 az account set --subscription ITDAI_IT-DS_PROD
-az acr build --registry pythonopt --image webimage .
+az acr build --registry pythonopt --image pythonopt .
 
 https://www.youtube.com/watch?v=kHz6sz0jVSU&t=0s
