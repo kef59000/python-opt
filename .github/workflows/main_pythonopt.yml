@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: pythonopt.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_977fa8e260654616a7ea28c40ed92d17 }}/pythonopt:${{ github.sha }}
+        tags: pythonopt.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_977fa8e260654616a7ea28c40ed92d17 }}:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'pythonopt'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_cf1a4370aa37458eba05029206777044 }}
-        images: 'pythonopt.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_977fa8e260654616a7ea28c40ed92d17 }}/pythonopt:${{ github.sha }}'
+        images: 'pythonopt.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_977fa8e260654616a7ea28c40ed92d17 }}:${{ github.sha }}'
