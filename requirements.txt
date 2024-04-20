@@ -16,7 +16,7 @@ entrypoints==0.4
 executing==1.1.1
 gitdb==4.0.9
 GitPython==3.1.29
-gurobipy==9.5.2
+# gurobipy==9.5.2
 idna==3.4
 importlib-metadata==5.0.0
 ipykernel==6.16.1
